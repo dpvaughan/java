@@ -5,7 +5,6 @@ public class FindAllGenes{
     StartCodon sCodon = new StartCodon();
     sCodon.findStartCodon("CATGTAATAGATGAATGACTGATAGATATGCTTGTATGCTATGAAAATGTGAAATGACCCA");
 
-
   }
 
 }

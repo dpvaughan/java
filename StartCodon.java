@@ -30,6 +30,19 @@ public class StartCodon{
 
   public void findStopIndex( int startIndex, String dna ){
 
+    String[] stopCodons = new String[3];
+
+    int stopIndex = 0;
+
+    stopCodons[0] = "TAG";
+    stopCodons[1] = "TGA";
+    stopCodons[2] = "TAA";
+
+    for(int i = 0; i < stopCodons.length; i++){
+      stopIndex = dna.indexOf(stopCodons[i], startIndex+3);
+      System.out.println("In here" + " " + " " + stopCodons[i] + " " + " " + stopIndex);
+    }
+
     System.out.println(startIndex + " " + dna);
 
   }
