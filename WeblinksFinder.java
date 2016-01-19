@@ -22,10 +22,17 @@ public class WeblinksFinder{
       int endQuote = html.indexOf("\"", firstQuote);
 
       String link = html.substring(firstQuote, endQuote);
-      System.out.println(link);
 
-      start = endQuote+1;
+      if(link.startsWith("http")){
+        if(link.startsWith("http://www.youtube") || link.startsWith("https://www.youtube")){
+            System.out.println(link);
+        } else {
+            System.out.println(link);
+        }
+      }
+
       count++;
+      start = endQuote+1;
 
     }
 

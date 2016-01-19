@@ -2,7 +2,7 @@ public class GeneFinder{
 
   public static void main( String args[]){
 
-    String dna = "AATGCTAGTTTAAATCTGA";
+    String dna = "AAATGCCCTAACTAGATTGAAACC";
     String[] stopCodons = new String[3];
     String propProtein = "";
 
