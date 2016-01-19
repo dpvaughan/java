@@ -1,38 +1,79 @@
- 2471  javac getTest.java 
- 2473  ./getTest.class
- 2476  chmod +x getTest.class 
- 2478  ./getTest.class 
- 2479  getTest.class
- 2480  java getTest.class
- 2481  java getTest
- 2483  javac getTest.java 
- 2484  java getTest
- 2485  javac getTest.java 
- 2486  java getTest 
- 2487  javac getTest.java 
- 2488  java getTest 
- 2489  javac getTest.java 
- 2490  java getTest 
- 2491  javac getTest.java 
- 2503  java getTest 
- 2506  javac getTestTest.java 
- 2507  chmod +x getTestTest.
- 2508  chmod +x getTestTest.class 
- 2510  java getTest 
- 2511  javac getTestTest.java 
- 2512  javac getTest.java
- 2513  javac getTestTest.java
- 2514  java getTest
- 2530  java getTest
- 2531  sudo nano getTest.java 
- 2885  wget http://www.dukelearntoprogram.com/course2/archives/tagFinder2.zip
- 2928  wget http://www.dukelearntoprogram.com/course2/data/dna/GRch38dnapart.fa
- 2930  wget http://www.dukelearntoprogram.com/course2/data/newyorktimes.html
- 2959  wget http://www.dukelearntoprogram.com/course2/data/manylinks.html
- 2962  get commit -m "New datafile manylinks"
- 2986  wget http://www.dukelearntoprogram.com/downloads/archives/duke_source.zip
- 2987  sudo wget http://www.dukelearntoprogram.com/downloads/archives/duke_source.zip
- 3077  wget http://mirrors.muzzy.org.uk/apache//commons/csv/binaries/commons-csv-1.2-bin.zip
- 3078  sudo wget http://mirrors.muzzy.org.uk/apache//commons/csv/binaries/commons-csv-1.2-bin.zip
- 3105  wget http://mirrors.muzzy.org.uk/apache//commons/csv/binaries/commons-csv-1.2-bin.zip
+ 2806  git
+ 2807  git --config user.name dpvaughan
+ 2808  git global config user.name "dpvaughan"
+ 2809  git config --global user.name "dpvaughan"
+ 2810  git config --global user.email "david.vaughan@mrc-epid.cam.ac.uk"
+ 2816  git init java
+ 2825  git add Test.java 
+ 2828  git comnit -m "this is a test"
+ 2829  git commit -m "this is a test"
+ 2830  git remote add origin https://github.com/dpvaughan/java.git
+ 2831  git push origin master
+ 2835  git push origin master
+ 2836  git add TagFinder.java 
+ 2837  git commit -m "this is a test"
+ 2838  git push origin master
+ 2848  git add TagFinder.class
+ 2849  git push origin master
+ 2850  git add TagFinder.class
+ 2851  git commit -m "this is a test"
+ 2852  git push origin master
+ 2855  git add GeneFinder.java
+ 2856  git add GeneFinder.class
+ 2857  git commit -m "this is a test"
+ 2858  git push origin master
+ 2920  git add -all
+ 2921  git add --all
+ 2922  git commit -m "this is a test"
+ 2923  git push origin master
+ 2935  git add -all
+ 2936  git add --all
+ 2939  git commit 
+ 2940  git commit -m
+ 2941  git commit -a
+ 2942  git commit -m "this is a test"
+ 2943  git push origin master
+ 2945  cd .git/
+ 2961  git add manylinks.html 
+ 2963  git commit -m "New datafile manylinks"
+ 2964  git update master origin
+ 2965  git push origin master
+ 2966  git ls-files
+ 2968  git ls-files
+ 2972  git ls-files
+ 2976  git pull
+ 2977  git fetch  https://github.com/dpvaughan/java
+ 2979  git pull https://github.com/dpvaughan/java
+ 3050  git add .
+ 3052  git push origin master
+ 3248  git add .
+ 3249  git add.
+ 3250  git .add
+ 3252  git add .
+ 3253  git add .;
+ 3254  git --add .
+ 3256  git add .
+ 3257  git commit -m "new files"
+ 3259  history | grep "git"
+ 3260  git push origin master
+ 3261  history | grep "git" > git.txt
+ 3263  less git.txt 
+ 3287  rm git.txt 
+ 3331  git add .
+ 3332  git add --all
+ 3333  git commit -m "New code"
+ 3334  history | grep "git"
+ 3335  git push origin master
+ 3347  git commit -m "New code"
+ 3348  git commit
+ 3349  git commit -m "New code"
+ 3350  git add
+ 3351  git add .
+ 3352  git commit
+ 3353  git commit -m "Alterations to the code"
+ 3354  git push origin master
  3355  history | grep "get" > git.txt
+ 3360  git add .
+ 3361  git commit
+ 3362  git push origin master
+ 3363  history | grep "git" > git.txt
