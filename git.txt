@@ -1,0 +1,38 @@
+ 2471  javac getTest.java 
+ 2473  ./getTest.class
+ 2476  chmod +x getTest.class 
+ 2478  ./getTest.class 
+ 2479  getTest.class
+ 2480  java getTest.class
+ 2481  java getTest
+ 2483  javac getTest.java 
+ 2484  java getTest
+ 2485  javac getTest.java 
+ 2486  java getTest 
+ 2487  javac getTest.java 
+ 2488  java getTest 
+ 2489  javac getTest.java 
+ 2490  java getTest 
+ 2491  javac getTest.java 
+ 2503  java getTest 
+ 2506  javac getTestTest.java 
+ 2507  chmod +x getTestTest.
+ 2508  chmod +x getTestTest.class 
+ 2510  java getTest 
+ 2511  javac getTestTest.java 
+ 2512  javac getTest.java
+ 2513  javac getTestTest.java
+ 2514  java getTest
+ 2530  java getTest
+ 2531  sudo nano getTest.java 
+ 2885  wget http://www.dukelearntoprogram.com/course2/archives/tagFinder2.zip
+ 2928  wget http://www.dukelearntoprogram.com/course2/data/dna/GRch38dnapart.fa
+ 2930  wget http://www.dukelearntoprogram.com/course2/data/newyorktimes.html
+ 2959  wget http://www.dukelearntoprogram.com/course2/data/manylinks.html
+ 2962  get commit -m "New datafile manylinks"
+ 2986  wget http://www.dukelearntoprogram.com/downloads/archives/duke_source.zip
+ 2987  sudo wget http://www.dukelearntoprogram.com/downloads/archives/duke_source.zip
+ 3077  wget http://mirrors.muzzy.org.uk/apache//commons/csv/binaries/commons-csv-1.2-bin.zip
+ 3078  sudo wget http://mirrors.muzzy.org.uk/apache//commons/csv/binaries/commons-csv-1.2-bin.zip
+ 3105  wget http://mirrors.muzzy.org.uk/apache//commons/csv/binaries/commons-csv-1.2-bin.zip
+ 3355  history | grep "get" > git.txt
