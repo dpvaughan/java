@@ -9,6 +9,7 @@ public class StartCodon{
   public int findStartCodon(String dna){
 
     int start = 0;
+    String protein = "";
 
     while(true){
 
@@ -18,7 +19,11 @@ public class StartCodon{
         break;
       }
 
-      findStopIndex(sCodonIndex, dna);
+      int stop = findStopIndex(sCodonIndex, dna);
+
+      protein = dna.substring(sCodonIndex, stop+3);
+
+      System.out.println(sCodonIndex + " " + " " +stop + " " + protein);
 
       start = sCodonIndex + 3;
 
@@ -30,24 +35,23 @@ public class StartCodon{
 
   public int findStopIndex( int startIndex, String dna ){
 
-    int stopCodonTAG = dna.indexOf("TAG", startIndex);
-    if(stopCodonTAG == -1 || ( stopCodonTAG - startIndex ) % 3 != 0){
-      stopCodonTAG = dna.length();
-      System.out.println(stopCodonTAG);
-      //System.out.println("Start : " + startIndex +  " Stop TAG: " + stopCodonTAG);
+    int stop1 = dna.indexOf("TGA", startIndex);
+
+    if (stop1 == -1 || (stop1 - startIndex) % 3 != 0) {
+        stop1 = dna.length();
     }
 
-    //int stopCodonTGA = dna.indexOf("TGA", startIndex);
-    //if(stopCodonTGA == -1 || ( stopCodonTGA - startIndex ) % 3 != 0){
-    //  System.out.println("Start : " + startIndex +  " Stop TGA: " + stopCodonTGA);
-    //}
+    int stop2 = dna.indexOf("TAA", startIndex);
+    if (stop2 == -1 || (stop2 - startIndex) % 3 != 0) {
+        stop2 = dna.length();
+    }
 
-    //int stopCodonTTA = dna.indexOf("TTA", startIndex);
-    //if(stopCodonTTA == -1 || ( stopCodonTTA - startIndex ) % 3 != 0){
-    //  System.out.println("Start : " + startIndex +  " Stop TTA: " + stopCodonTTA);
-    //}
+    int stop3 = dna.indexOf("TAG", startIndex);
+    if (stop3 == -1 || (stop3 - startIndex) % 3 != 0) {
+        stop3 = dna.length();
+    }
 
-    return 1;
+    return Math.min(stop1, Math.min(stop2, stop3));
 
   }
 
