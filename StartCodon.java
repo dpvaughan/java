@@ -12,15 +12,15 @@ public class StartCodon{
 
     while(true){
 
-      int startIndex = dna.indexOf(startCodon, start);
+      int sCodonIndex = dna.indexOf(startCodon, start);
 
-      if(startIndex == -1){
+      if(sCodonIndex == -1){
         break;
-      } else {
-        findStopIndex(startIndex, dna);
       }
 
-      start = startIndex + 3;
+      findStopIndex(sCodonIndex, dna);
+
+      start = sCodonIndex + 3;
 
     }
 
@@ -28,36 +28,26 @@ public class StartCodon{
 
   }
 
-  public void findStopIndex( int startIndex, String dna ){
+  public int findStopIndex( int startIndex, String dna ){
 
-    int start = 0;
-    int stopIndex = 0;
-
-    String[] stopCodons = new String[3];
-
-    stopCodons[0] = "TAG";
-    //stopCodons[1] = "TGA";
-    //stopCodons[2] = "TAA";
-
-    for(int i = 0; i < stopCodons.length; i++){
-
-      while(true){
-
-        stopIndex = dna.indexOf(stopCodons[i], start+3);
-
-        if(stopIndex == -1){
-          break;
-        }
-
-        start = stopIndex + 3;
-
-        System.out.println(stopCodons[i] + " " + stopIndex);
-
-      }
-
-      //System.out.println(stopCodons[i] + " " + stopIndex);
-
+    int stopCodonTAG = dna.indexOf("TAG", startIndex);
+    if(stopCodonTAG == -1 || ( stopCodonTAG - startIndex ) % 3 != 0){
+      stopCodonTAG = dna.length();
+      System.out.println(stopCodonTAG);
+      //System.out.println("Start : " + startIndex +  " Stop TAG: " + stopCodonTAG);
     }
+
+    //int stopCodonTGA = dna.indexOf("TGA", startIndex);
+    //if(stopCodonTGA == -1 || ( stopCodonTGA - startIndex ) % 3 != 0){
+    //  System.out.println("Start : " + startIndex +  " Stop TGA: " + stopCodonTGA);
+    //}
+
+    //int stopCodonTTA = dna.indexOf("TTA", startIndex);
+    //if(stopCodonTTA == -1 || ( stopCodonTTA - startIndex ) % 3 != 0){
+    //  System.out.println("Start : " + startIndex +  " Stop TTA: " + stopCodonTTA);
+    //}
+
+    return 1;
 
   }
 
