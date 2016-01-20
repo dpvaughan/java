@@ -21,7 +21,7 @@ public class StartCodon{
 
       int stop = findStopIndex(sCodonIndex, dna);
 
-      protein = dna.substring(sCodonIndex, stop+3);
+      protein = dna.substring(sCodonIndex, stop);
 
       System.out.println(sCodonIndex + " " + " " +stop + " " + protein);
 
